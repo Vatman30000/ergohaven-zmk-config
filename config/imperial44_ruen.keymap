@@ -9,9 +9,10 @@
         compatible = "zmk,combos";
 
         ctrl+v_ru {
-            bindings = <&kp LC(V)>;
+            bindings = <&ctrl_v_ru>;
             key-positions = <28 40>;
             layers = <1>;
+            timeout-ms = <0>;
         };
     };
 
@@ -64,6 +65,13 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp N>;
             label = "PRINT_EN";
+        };
+
+        ctrl_v_ru: ctrl_v_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_ru &kp LC(V) &layer_en>;
+            label = "CTRL_V_RU";
         };
     };
 
