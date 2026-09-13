@@ -14,6 +14,11 @@
             layers = <1>;
             timeout-ms = <0>;
         };
+
+        print_ru {
+            bindings = <&print_ru>;
+            key-positions = <41 23>;
+        };
     };
 
     macros {
@@ -70,7 +75,7 @@
         ctrl_v_ru: ctrl_v_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_ru &kp LC(V) &layer_en>;
+            bindings = <&layer_en &kp LC(V) &layer_ru>;
             label = "CTRL_V_RU";
         };
     };
