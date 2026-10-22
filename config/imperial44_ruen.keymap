@@ -185,15 +185,19 @@
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V      &kp B  &none        &to 0   &trans  &trans  &trans  &trans  &trans  &trans
                                      &kp SPACE  &mo 9  &kp LCTRL    &trans  &trans  &trans
             >;
+
+            label = "game";
         };
 
         numbers_for_games {
             bindings = <
-&trans  &trans  &kp N1  &trans  &kp NUMBER_2  &kp NUMBER_3                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans        &trans        &trans    &trans  &trans  &trans
+&trans   &trans  &kp N1  &trans  &kp NUMBER_2  &kp NUMBER_3                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC  &trans  &trans  &trans  &trans        &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans        &trans        &trans    &trans  &trans  &trans
             >;
+
+            label = "numb game";
         };
     };
 };
