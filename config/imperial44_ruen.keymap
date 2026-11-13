@@ -70,7 +70,23 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+        layer_en_caps: layer_en_caps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &to_en_caps>;
+            label = "LAYER_EN_CAPS";
+            wait-ms = <0>;
+            tap-ms = <30>;
+        };
 
+        layer_ru_caps: layer_ru_caps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &to_ru_caps>;
+            label = "LAYER_RU_CAPS";
+            wait-ms = <0>;
+            tap-ms = <30>;
+        };
         layer_en: layer_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
